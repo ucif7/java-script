@@ -1,0 +1,14 @@
+1.Difference between forEach and for...of:
+Both are used to go through array elements. forEach runs a function for each item and is useful for simple operations on every element. for...of gives you more control: you can stop the loop with break or skip an item with continue. Use forEach for simple iteration and for...of when you need more control.
+
+2.Hoisting and the Temporal Dead Zone (TDZ):
+Hoisting means JavaScript processes declarations before executing the rest of the code. A function declaration can be called before it appears in the code. Variables declared with let and const cannot be used before their declaration. The period between entering their scope and reaching their declaration is called the Temporal Dead Zone (TDZ). Trying to use them during this period causes an error.
+
+3.Difference between == and ===:
+The == operator compares values and may convert one value’s type before comparing. The === operator compares both value and type without automatic conversion. Using === is usually recommended because its results are more predictable.
+
+4.How try-catch works and why it matters in asynchronous operations:
+Code that might cause an error is placed inside the try block. If an error occurs, JavaScript moves to the catch block, where the error can be handled. With asynchronous operations that use await, try-catch can handle rejected promises, for example by showing an error message or trying another action.
+
+5.Type conversion and coercion:
+Type conversion is when a programmer intentionally changes a value’s type. Coercion happens when JavaScript automatically changes a value’s type during an operation.
